@@ -1,1 +1,66 @@
-/* Denna fil skall innehålla din CSS kod */
+#wrapper1 {
+    display: grid;
+    background-color: aqua;
+    grid-template-areas: 
+    "hd as"
+    "nv nv"
+    "sn sn"
+    "pe pe"
+    "ft ft";
+    min-height: 100vh;
+    gap: 2vh;
+    grid-template-rows: 20vh 10vh 25vh 35vh 10vh;
+}
+
+#wrapper2 {
+    display: grid;
+    background-color: aqua;
+    grid-template-areas: 
+    "hd as"
+    "nv nv"
+    "mn mn"
+    "ft ft";
+    min-height: 100vh;
+    gap: 2vh;
+}
+
+#wrapper3 {
+    display: grid;
+    background-color: aqua;
+    grid-template-areas: 
+    "hd as"
+    "nv nv"
+    "ft ft";
+    min-height: 100vh;
+    gap: 2vh;
+}
+
+header {
+    background-color: blue;
+    grid-area: hd;
+}
+aside {
+    background-color: aquamarine;
+    grid-area: as;
+}
+nav {
+    background-color: brown;
+    grid-area: nv;
+}
+section {
+    background-color: chartreuse;
+    grid-area: sn;
+}
+picture {
+    background-color: cornflowerblue;
+    grid-area: pe;
+}
+footer {
+    background-color: deeppink;
+    grid-area: ft;
+}
+
+main {
+    background-color: darkorange;
+    grid-area: mn;
+}
