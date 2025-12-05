@@ -1,15 +1,20 @@
+body {
+    margin: 0;
+    
+}
+
 #wrapper1 {
+    height: 100vh;
     display: grid;
-    background-color: aqua;
+    background-color: #b58b63;
     grid-template-areas: 
-    "hd as"
-    "nv nv"
-    "sn sn"
-    "pe pe"
-    "ft ft";
-    min-height: 100vh;
-    gap: 2vh;
-    grid-template-rows: 20vh 10vh 25vh 35vh 10vh;
+    "hd as1"
+    "nv1 nv1"
+    "sn1 sn1"
+    "pe1 pe1"
+    "ft1 ft1";
+    grid-template-rows: 10% 5% 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 #wrapper2 {
@@ -36,31 +41,31 @@
 }
 
 header {
-    background-color: blue;
+    background-color: rgba(255, 000, 000, 0);
     grid-area: hd;
 }
 aside {
     background-color: aquamarine;
-    grid-area: as;
+    grid-area: as1;
 }
 nav {
     background-color: brown;
-    grid-area: nv;
+    grid-area: nv1;
 }
 section {
     background-color: chartreuse;
-    grid-area: sn;
+    grid-area: sn1;
 }
 picture {
     background-color: cornflowerblue;
-    grid-area: pe;
+    grid-area: pe1;
 }
 footer {
     background-color: deeppink;
-    grid-area: ft;
+    grid-area: ft1;
 }
 
 main {
     background-color: darkorange;
-    grid-area: mn;
+    grid-area: mn1;
 }
