@@ -8,18 +8,18 @@ body {
     display: grid;
     background-color: #b58b63;
     grid-template-areas: 
-    "hd as1"
-    "nv1 nv1"
-    "sn1 sn1"
-    "pe1 pe1"
-    "ft1 ft1";
-    grid-template-rows: 10% 5% 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    "hd as"
+    "nv nv"
+    "sn sn"
+    "pe pe"
+    "ft ft";
+    grid-template-rows: 15% 10% 1fr 2fr 5%;
+    grid-template-columns: 1fr 10%;
+    
 }
 
 #wrapper2 {
     display: grid;
-    background-color: aqua;
     grid-template-areas: 
     "hd as"
     "nv nv"
@@ -31,7 +31,7 @@ body {
 
 #wrapper3 {
     display: grid;
-    background-color: aqua;
+
     grid-template-areas: 
     "hd as"
     "nv nv"
@@ -40,32 +40,34 @@ body {
     gap: 2vh;
 }
 
+#borders {
+    border: 1rem solid brown;
+    border-radius: 20px;
+    background-color: #b58b63;
+}
+
 header {
-    background-color: rgba(255, 000, 000, 0);
     grid-area: hd;
 }
 aside {
-    background-color: aquamarine;
-    grid-area: as1;
+    grid-area: as;
 }
 nav {
-    background-color: brown;
-    grid-area: nv1;
+    grid-area: nv;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 section {
-    background-color: chartreuse;
-    grid-area: sn1;
+    grid-area: sn;
 }
 picture {
-    background-color: cornflowerblue;
-    grid-area: pe1;
+    grid-area: pe;
 }
 footer {
-    background-color: deeppink;
-    grid-area: ft1;
+    grid-area: ft;
 }
 
 main {
-    background-color: darkorange;
-    grid-area: mn1;
+    grid-area: mn;
 }
