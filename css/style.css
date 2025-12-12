@@ -25,8 +25,9 @@ body {
     "nv nv"
     "mn mn"
     "ft ft";
+    grid-template-rows: 15% 10% 1fr 5%;
+    grid-template-columns: 1fr 10%;
     min-height: 100vh;
-    gap: 2vh;
 }
 
 #wrapper3 {
@@ -70,4 +71,20 @@ footer {
 
 main {
     grid-area: mn;
+    
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: auto;
+    background-color: aliceblue;
+
 }
