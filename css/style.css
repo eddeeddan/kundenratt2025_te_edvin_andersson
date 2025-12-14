@@ -84,7 +84,15 @@ main {
     display: flex;
     flex-direction: column;
     width: 20vw;
-    height: auto;
+    height: 45%;
     background-color: aliceblue;
 
+}
+
+
+.allergier {
+    width: auto;        /* base size for desktop */
+    height: 10%;
+    vertical-align: middle; /* aligns nicely with text */
+    display: inline-block;
 }
