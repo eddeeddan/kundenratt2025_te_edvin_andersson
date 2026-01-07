@@ -6,8 +6,8 @@ body {
     
 }
 
-#wrapper1 {   
-
+#wrapper1 {
+    min-height: 100vh;
     display: grid;
     grid-template-areas: 
     "hd as"
@@ -15,16 +15,12 @@ body {
     "sn sn"
     "pe pe"
     "ft ft";
-    grid-template-rows: 20vh 10vh 1fr 2fr 5%;
+    grid-template-rows: 20vh 10vh 1fr 2fr 5vh;
     grid-template-columns: 1fr 10%;
-    
-    
-    
 }
 
 #wrapper2 {
-    height: 100vh;
-
+    min-height: 100vh;
     display: grid;
     grid-template-areas: 
     "hd as"
@@ -37,7 +33,6 @@ body {
 
 #wrapper3 {
     display: grid;
-
     grid-template-areas: 
     "hd as"
     "nv nv"
@@ -46,10 +41,6 @@ body {
     gap: 2vh;
 }
 
-#borders {
-    
-    background-color: #b58b63;
-}
 
 header {
     grid-area: hd;
@@ -93,6 +84,18 @@ main {
 
 }
 
+#indexflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#indexcards {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 40vh;
+}
 
 .allergier {
     width: auto;        /* base size for desktop */
@@ -109,5 +112,5 @@ main {
 }
 
 .picscafe {
-    width: 50%;
+    width: 10%;
 }
