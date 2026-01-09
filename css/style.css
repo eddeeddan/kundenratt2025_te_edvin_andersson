@@ -119,17 +119,17 @@ main {
     display: flex;
     flex-direction: column;
     width: 20vw;
-    height: 30vh;
+    height: auto;
     background-color: aliceblue;
 }
 
-#menu {
+#meny {
     display: grid;
     grid-template-areas: 
     "ds py"
-    "ds lh"
+    "ds lh";
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 #drinks {
