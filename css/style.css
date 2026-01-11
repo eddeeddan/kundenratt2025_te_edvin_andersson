@@ -42,7 +42,7 @@ body {
     grid-template-rows: 20vh 10vh 1fr auto 5vh;
     grid-template-columns: 4fr 1fr auto;
 
-    
+    gap: 2rem;
 }
 
 header {
@@ -121,6 +121,7 @@ main {
     width: 20vw;
     height: auto;
     background-color: aliceblue;
+    border-radius: 2rem;
 }
 
 #meny {
@@ -130,6 +131,7 @@ main {
     "ds lh";
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 2fr;
+    gap: 2rem;
 }
 
 #drinks {
@@ -152,6 +154,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 2rem;
 }
 
 #indexcards {
@@ -163,9 +166,9 @@ main {
 }
 
 #logo {
-    width: auto;        /* base size for desktop */
+    width: auto;
     height: 20vh;
-    vertical-align: middle; /* aligns nicely with text */
+    vertical-align: middle;
     display: inline-block;
 }
 
@@ -173,10 +176,14 @@ main {
     width: 10%;
 }
 
-#navbutton {
+.navbuttons {
     background: #f6efe8;
     border-width: 10px;
     border-color: darkgreen;
     height: 5vh;
     width: 10vw;
+
+
+    color: #000;
+    text-decoration: none;
 }
