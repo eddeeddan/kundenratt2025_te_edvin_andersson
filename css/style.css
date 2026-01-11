@@ -26,7 +26,7 @@ body {
     "nv nv nv"
     "mn mn mn"
     "ft ft ft";
-    grid-template-rows: 20vh 10vh 1fr 5vh;
+    grid-template-rows: 20vh 5vh 1fr 5vh;
     grid-template-columns: 1fr 1fr auto;
 }
 
@@ -39,7 +39,7 @@ body {
     "hy ct ct"
     "sf ct ct"
     "ft ft ft";
-    grid-template-rows: 20vh 10vh 1fr auto 5vh;
+    grid-template-rows: 20vh 5vh 1fr auto 5vh;
     grid-template-columns: 4fr 1fr auto;
 
     gap: 2rem;
@@ -92,11 +92,12 @@ main {
     flex-direction: column;
     width: 20%;
     height: auto;
-    background-color: #a5b58d;
     align-items: center;
     padding: 1rem;
-    border: 0.5rem solid #a5b58d;
-    border-radius: 2rem;
+
+    background: #a5b58d;
+    border: 0.25rem solid #f6efe8;
+    border-radius: 1rem;
 }
 
 .staffpic {
@@ -177,13 +178,16 @@ main {
 }
 
 .navbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background: #f6efe8;
-    border-width: 10px;
-    border-color: darkgreen;
+    border: 0.25rem solid #a5b58d;
+    border-radius: 1rem;
+    
     height: 5vh;
     width: 10vw;
-
-
     color: #000;
     text-decoration: none;
 }
