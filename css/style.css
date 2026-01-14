@@ -133,6 +133,7 @@ main {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
+    margin: 5rem;
 }
 
 #drinks {
