@@ -176,8 +176,9 @@ main {
 }
 
 .picscafe {
-    width: 10%;
+    width: 50%;
 }
+
 
 .navbuttons {
     display: flex;
@@ -194,6 +195,32 @@ main {
     text-decoration: none;
 }
 
-#weltext {
+#weltext{
+    margin-right: 20rem;
+    margin-left: 20rem;
+}
+
+#history {
     margin: 5rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    color:#f6efe8;
+
+    background-image: url("../img/environment/outside1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+table {
+  width: 50%;
+  text-size-adjust: 1rem;
+}
+caption {
+    text-align: left;
+}
+th {
+  text-align: left;
+}
+td {
+  text-align: right;
 }
