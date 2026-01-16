@@ -206,13 +206,14 @@ iframe{
 }
 
 #weltext{
-    width: 75%;
+    width: 50%;
     margin: 5rem auto;
     border-radius: 1rem;
     background-image: url("../img/environment/firstpage2.jpg");
     background-position: center;
-    height: 50vh;
+    height: 40vh;
     padding: 5rem;
+    font-size: larger;
 }
 
 #history {
@@ -238,6 +239,7 @@ th {
 }
 td {
   text-align: right;
+  word-wrap: none;
 }
 
 .media {
