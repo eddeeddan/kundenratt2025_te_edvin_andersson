@@ -1,8 +1,6 @@
 body {
     margin: 0;
-    background-color: #b58b63;
-    border: 0.5rem solid #a5b58d;
-    border-radius: 5px;
+    background-color: #a5b58d;
 }
 
 #wrapper1 {
@@ -48,6 +46,10 @@ body {
     "nv nv";
     grid-template-rows: 75% 25%;
     grid-template-columns: 1fr auto;
+    background-color: #b58b63;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 1rem;
 }
 
 header {
@@ -103,9 +105,9 @@ main {
     width: 20%;
     height: auto;
     align-items: center;
-    padding: 1rem;
-
-    background: #a5b58d;
+    margin: 1rem;
+    /*padding: 1rem;*/
+    background: #b58b63;
     border: 0.25rem solid #f6efe8;
     border-radius: 1rem;
 }
@@ -127,12 +129,26 @@ iframe{
     margin: 2rem;
 }
 
-.menus, .more {
+.menus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
     margin: 1rem;
+}
+.more {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    background: #f6efe8;
+    border: 0.25rem solid #a5b58d;
+    border-radius: 1rem;
+    height: 4vh;
+    width: 10vw;
+    color: #000;
+    text-decoration: none;
 }
 
 .menuitem {
@@ -140,7 +156,7 @@ iframe{
     flex-direction: column;
     width: 20vw;
     height: auto;
-    background-color: aliceblue;
+    background-color: #f6efe8;
     border-radius: 2rem;
     padding: 1rem;
 }
@@ -148,40 +164,53 @@ iframe{
 #meny {
     display: grid;
     grid-template-areas: 
-    "ds py"
-    "ds lh";
+    "nf py"
+    "nf lh";
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 3fr;
     gap: 2rem;
     margin: 2rem;
 }
+section h3 {
+    text-align: center;
+}
 
-#drinks {
-    grid-area: ds;
+#not-food {
+    grid-area: nf;
+    background-color: #b58b63;
+    border-radius: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 #pastry {
     grid-area: py;
-    background-color: #a5b58d;
+    background-color: #b58b63;
     border-radius: 3rem;
 }
 
 #lunch {
     grid-area: lh;
-    background-color: #a5b58d;
+    background-color: #b58b63;
     border-radius: 3rem;
 }
 
 #firstpage {
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;*/
     gap: 2rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+#firstpic1, #firstpic2, #firstpic3, #firstpic4, #firstpic5 {
+    width: auto;
+    height: 50vh;
+    border-radius: 10px;
 }
 
 .indexcards {
-    /*display: flex;
-    flex-direction: column;*/
     width: auto;
     height: 50vh;
     border-radius: 10px;
@@ -189,7 +218,7 @@ iframe{
 
 #logo {
     width: auto;
-    height: 15vh;
+    height: 14vh;
     vertical-align: middle;
     display: inline-block;
 }
@@ -204,12 +233,10 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: #f6efe8;
     border: 0.25rem solid #a5b58d;
     border-radius: 1rem;
-    
-    height: 5vh;
+    height: 4vh;
     width: 10vw;
     color: #000;
     text-decoration: none;
@@ -237,25 +264,50 @@ iframe{
     background-position: center;
 }
 
-table {
-  width: 100%;
-  font-size: large;
+#openinghours {
+    width: 100%;
 }
-caption {
+caption.open {
     text-align: left;
 }
-th {
-  text-align: left;
+th.open {
+    text-align: left;
 }
-td {
-  text-align: center;
+td.open {
+    text-align: center;
+    font-size: large;
 }
+
+.drinks{
+}
+caption.drinks {
+    text-align: left;
+}
+th.drink {
+    text-align: right;
+    padding: 0.5rem;
+}
+th.drinks {
+    text-align: left;
+    padding: 0.5rem;
+}
+td.drinks {
+    text-align: center;
+    padding: 0.5rem;
+}
+
 
 .media {
     height: 16px;
 }
-
-.footertext {
+.linktext {
     color: #000000;
     text-decoration: none;
+}
+
+.contacts{
+    background-color: #f6efe8;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem;
 }

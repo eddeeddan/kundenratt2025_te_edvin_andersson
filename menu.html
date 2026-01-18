@@ -14,7 +14,7 @@
             </header>
             <aside>
                 <a href="index.html">
-                    <img src="img/logos/kafe_logo.png" alt="Logga" id="logo">
+                    <img src="img/icons/kafe_logo.png" alt="Logga" id="logo">
                 </a>
             </aside>
             <nav>
@@ -31,45 +31,73 @@
         </div>
 
         <main id="meny">
-            <h2>Vår meny</h2>
+            <div id="not-food">
+                <section id="warmdrinks">
+                <h3>Drycker</h3>
+                    <table class="drinks">
+                        <caption>
+                            Varma drycker
+                        </caption>
+                        <thead>
+                            <tr>
+                            <th scope="col" class="drinks"></th>
+                            <th scope="col" class="drink">Liten</th>
+                            <th scope="col" class="drink">Stor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row" class="drinks">Espresso</th>
+                            <td class="drinks">30 kr</td>
+                            <td class="drinks"></td>
+                            </tr>
+                            <tr>
+                            <th scope="row" class="drinks">Americano</th>
+                            <td class="drinks">44 kr</td>
+                            <td class="drinks">54kr</td>
+                            </tr>
+                            <tr>
+                            <th scope="row" class="drinks">Cappuchino</th>
+                            <td class="drinks">49 kr</td>
+                            <td class="drinks">59 kr</td>
+                            </tr>
+                            <tr>
+                            <th scope="row" class="drinks">Caffè latte</th>
+                            <td class="drinks">52 kr</td>
+                            <td class="drinks">62 kr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-            <section id="drinks">
-            <h3>Drycker</h3>
-                <table>
-                    <caption>
-                        <h3>Varma drycker</h3>
-                    </caption>
-                    <thead>
-                        <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Liten</th>
-                        <th scope="col">Stor</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <th scope="row">Espresso</th>
-                        <td>30 kr</td>
-                        <td></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">Americano</th>
-                        <td>44 kr</td>
-                        <td>54 kr</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">Cappuchino</th>
-                        <td>49 kr</td>
-                        <td>59 kr</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">Caffè latte</th>
-                        <td>52 kr</td>
-                        <td>62 kr</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                <section id="colddrinks">
+                    <table>
+                        <caption>
+                            Kalla drycker
+                        </caption>
+                        <tbody>
+                            <tr>
+                            <th scope="row" class="drinks">Ramlösa</th>
+                            <td class="drinks">30 kr</td>
+                            </tr>
+                            <tr>
+                            <th scope="row" class="drinks">Loka</th>
+                            <td class="drinks">44 kr</td>
+                            </tr>
+                            <tr>
+                            <th scope="row" class="drinks">Pepsi</th>
+                            <td class="drinks">49 kr</td>
+                            </tr>
+                            <tr>
+                            <th scope="row" class="drinks">7up</th>
+                            <td class="drinks">52 kr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <a href="" class="more">Beställ catering</a>
+            </div>
 
             <section id="pastry">
                 <h3>Våra bakverk</h3>
@@ -104,6 +132,12 @@
                         <p>Våra muffins är saftiga och smakrika, med olika fyllningar som blåbär, choklad eller vanilj. Perfekta till fikat!</p>
                         <h5>30 kr</h5>
                     </article>
+                    <article class="menuitem">
+                        <img src="img/menupics/croissant.jpg" alt="Croissant" class="picscafe">
+                        <h4>Croissant</h4>
+                        <p>Vårt croissant är smörigt, krispigt och fyllt med en rik smak av smör och kanel. Perfekt till fikat!</p>
+                        <h5>30 kr</h5>
+                    </article>
                 </section>
                 <a href="" class="more">Se mer</a>
             </section>
@@ -135,9 +169,36 @@
         </main>
 
         <footer>
-            Solstrålegatan 41
-            Instagram
-            Facebook
+            <div>
+                <a href="https://www.google.com/maps/place/Nordenski%C3%B6ldsgatan+1,+413+09+G%C3%B6teborgs" class="linktext">
+                    <span>Nordenskiöldsgatan 1</span>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:info@kafesolglimt.com" class="linktext">
+                    <span >info@kafesolglimt.com</span>
+                </a>
+                <a href="tel:070-1740635" class="linktext">
+                    <span>070-1740635</span>
+                </a>
+            </div>
+            <div id="social">
+                <a href="https://www.instagram.com/agaton_olsson/" class="linktext">
+                    <img src="img/icons/instagram_white_logo.png" alt="Insta" class="media"> 
+                    <span>kafe_solglimt</span>
+                </a>
+                <a href="https://www.instagram.com/agaton_olsson/" class="linktext">
+                    <img src="img/icons/facebook_white_logo.png" alt="Insta" class="media">
+                    <span>kafe_solglimt</span>
+                </a>
+                <a href="https://www.instagram.com/agaton_olsson/" class="linktext">
+                    <img src="img/icons/x_white_logo.png" alt="Insta" class="media">
+                    <span>solglimt_kafe</span>
+                </a>
+            </div>
+            <div>
+                &copy; 2026 Kafé Solglimt
+            </div>
         </footer>
     </div>
     
