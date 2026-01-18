@@ -157,6 +157,7 @@ iframe{
     width: 20vw;
     height: auto;
     background-color: #f6efe8;
+    border: 0.25rem solid #a5b58d;
     border-radius: 2rem;
     padding: 1rem;
 }
@@ -171,7 +172,7 @@ iframe{
     gap: 2rem;
     margin: 2rem;
 }
-section h3 {
+section h2 {
     text-align: center;
 }
 
@@ -246,20 +247,23 @@ section h3 {
     width: 50%;
     margin: 5rem auto;
     border-radius: 1rem;
-    background-image: url("../img/cafepics/firstpage2.jpg");
+    background-image: url("../img/cafepics/frontpage.jpg");
     background-position: center;
     height: 40vh;
     padding: 5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
     font-size: larger;
+    color:#f6efe8;
 }
 
 #history {
     margin: 2rem;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 5rem;
+    font-size: larger;
     color:#f6efe8;
-
-    background-image: url("../img/cafepics/outside1.jpg");
+    background-image: url("../img/cafepics/outside.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -310,4 +314,17 @@ td.drinks {
     padding: 1rem;
     border-radius: 2rem;
     margin: 1rem;
+}
+
+.icon{
+    height: 4rem;
+    width: auto;
+    object-fit: contain;
+}
+
+#warmdrinks, #colddrinks {
+    background-color: #f6efe8;
+    border: 0.25rem solid #a5b58d;
+    border-radius: 2rem;
+    padding: 1rem;
 }
